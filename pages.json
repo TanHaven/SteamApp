@@ -1,0 +1,82 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/course/course",
+			"style": {
+				"navigationBarTitleText": "少年代码",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "私信",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/personage/personage",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/login/login"
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "少年代码",
+		"navigationBarBackgroundColor": "#4678FA",
+		"backgroundColor": "#F4F3F0"
+	},
+	"tabBar": {
+		"color": "#8A8A8A",
+		"selectedColor": "#4678FA",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"text": "课程",
+				"pagePath":"pages/course/course",
+				"iconPath":"static/tab/course.png",
+				"selectedIconPath":"static/tab/course-active.png"
+			},
+			{
+				"text": "学习",
+				"pagePath":"pages/study/study",
+				"iconPath":"static/tab/study.png",
+				"selectedIconPath":"static/tab/study-active.png"
+			},
+			{
+				"text": "私信",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tab/message.png",
+				"selectedIconPath":"static/tab/message-active.png"
+			},
+			{
+				"text": "我的",
+				"pagePath":"pages/personage/personage",
+				"iconPath":"static/tab/personage.png",
+				"selectedIconPath":"static/tab/personage-active.png"
+			}
+		]
+	}
+}

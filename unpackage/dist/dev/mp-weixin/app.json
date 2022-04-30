@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/course/course",
+    "pages/study/study",
+    "pages/message/message",
+    "pages/personage/personage",
+    "pages/login/login",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "少年代码",
+    "navigationBarBackgroundColor": "#4678FA",
+    "backgroundColor": "#F4F3F0"
+  },
+  "tabBar": {
+    "color": "#8A8A8A",
+    "selectedColor": "#4678FA",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "text": "课程",
+        "pagePath": "pages/course/course",
+        "iconPath": "static/tab/course.png",
+        "selectedIconPath": "static/tab/course-active.png"
+      },
+      {
+        "text": "学习",
+        "pagePath": "pages/study/study",
+        "iconPath": "static/tab/study.png",
+        "selectedIconPath": "static/tab/study-active.png"
+      },
+      {
+        "text": "私信",
+        "pagePath": "pages/message/message",
+        "iconPath": "static/tab/message.png",
+        "selectedIconPath": "static/tab/message-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/personage/personage",
+        "iconPath": "static/tab/personage.png",
+        "selectedIconPath": "static/tab/personage-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
