@@ -8,7 +8,7 @@ export const $http = function(url){
 				
 			},
 			data,
-			success: (res) {
+			success: (res) => {
 				resolve(res.data)
 			},
 			fail: (err) => {

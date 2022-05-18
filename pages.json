@@ -1,6 +1,44 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/login/phonelogin",
+			"style": {
+				"navigationBarTitleText": "密码登录",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/login/login"
+		},
+		// {
+		// 	"path": "pages/login/phonelogin",
+		// 	"style": {
+		// 		"navigationBarTitleText": "密码登录",
+		// 		"enablePullDownRefresh": true,
+		// 		"backgroundTextStyle": "dark"
+		// 	}
+		// },
+		{
+			"path": "pages/login/wxlogin",
+			"style": {
+				"navigationBarTitleText": "微信登录",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/login/qqLogin",
+			"style": {
+				"navigationBarTitleText": "QQ登录",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
 			"path": "pages/course/course",
 			"style": {
 				"navigationBarTitleText": "少年代码",
@@ -31,22 +69,26 @@
 				"enablePullDownRefresh": true,
 				"backgroundTextStyle": "dark"
 			}
-		},
-		{
-			"path": "pages/login/login"
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
 		}
+		// {
+		// 	"path": "pages/login/login"
+		// },
+		// {
+		// 	"path": "pages/index/index",
+		// 	"style": {
+		// 		"navigationBarTitleText": "uni-app"
+		// 	}
+		// }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "少年代码",
 		"navigationBarBackgroundColor": "#4678FA",
-		"backgroundColor": "#F4F3F0"
+		"backgroundColor": "#F4F3F0",
+		"usingComponents": {
+			"van-button": "/wxcomponents/vant/dist/button/index",
+			"van-dialog": "/wxcomponents/vant/dist/dialog/index"
+		}
 	},
 	"tabBar": {
 		"color": "#8A8A8A",

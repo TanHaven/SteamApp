@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxd9d9ee3f8400d869",
         "setting" : {
             "urlCheck" : false
         },
@@ -68,5 +68,8 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "template" : "model.html"
+    }
 }

@@ -11,7 +11,12 @@
 		}
 	}
 </script>
-
+	
 <style>
 	/*每个页面公共css */
+	/*coloruicss*/
+	@import "colorui/main.css";
+	@import "colorui/icon.css";
+	/*weixincss*/
+	@import "wxcomponents/vant/dist/common/index.wxss";
 </style>

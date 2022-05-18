@@ -1,11 +1,14 @@
 {
   "pages": [
+    "pages/login/phonelogin",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/login/wxlogin",
+    "pages/login/qqLogin",
     "pages/course/course",
     "pages/study/study",
     "pages/message/message",
-    "pages/personage/personage",
-    "pages/login/login",
-    "pages/index/index"
+    "pages/personage/personage"
   ],
   "subPackages": [],
   "window": {
@@ -45,5 +48,8 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "van-button": "/wxcomponents/vant/dist/button/index",
+    "van-dialog": "/wxcomponents/vant/dist/dialog/index"
+  }
 }
