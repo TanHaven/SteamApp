@@ -16,12 +16,16 @@
 		},
 		methods: {
 			to(){
-				setTimeout(()=>{
+				var timer = setTimeout(()=>{
 					uni.navigateTo({
 						url:"/pages/login/login"
 					})
-				},500)
+				},2000);
+				
 			}
+		},
+		beforeDestroy() {
+			clearTimeout( timer )
 		}
 	}
 </script>

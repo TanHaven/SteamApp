@@ -1,5 +1,19 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		// {
+		// 	"path": "pages/login/verify",
+		// 	"style": {
+		// 		"navigationBarTitleText": "验证码登录",
+		// 		"enablePullDownRefresh": true,
+		// 		"backgroundTextStyle": "dark"
+		// 	}
+		// },
+		{
+			"path": "pages/index/index"
+		},
+		{
+			"path": "pages/login/login"
+		},
 		{
 			"path": "pages/login/phonelogin",
 			"style": {
@@ -9,19 +23,13 @@
 			}
 		},
 		{
-			"path": "pages/index/index"
+			"path": "pages/login/verify",
+			"style": {
+				"navigationBarTitleText": "验证码登录",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
 		},
-		{
-			"path": "pages/login/login"
-		},
-		// {
-		// 	"path": "pages/login/phonelogin",
-		// 	"style": {
-		// 		"navigationBarTitleText": "密码登录",
-		// 		"enablePullDownRefresh": true,
-		// 		"backgroundTextStyle": "dark"
-		// 	}
-		// },
 		{
 			"path": "pages/login/wxlogin",
 			"style": {

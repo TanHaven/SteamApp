@@ -36,7 +36,17 @@
   "libVersion": "2.24.1",
   "appid": "wxd9d9ee3f8400d869",
   "projectname": "uni-NF-Front-End",
-  "condition": {},
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": ""
+        }
+      ]
+    }
+  },
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

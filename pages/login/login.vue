@@ -65,7 +65,7 @@
 		<view class="box flex justify-center">
 			<label style="color: white;">
 				<!-- <view class="wx-checkbox-input">nihao</view> -->
-				<!-- <checkbox checked="true" color="white" /> -->登录代表已阅读并同意
+				<checkbox checked="true" color="white" />登录代表已阅读并同意
 					<navigator style="color: blue; display: inline;" @click="">《用户协议》</navigator>
 					和
 					<navigator style="color: blue; display: inline;" @click="">《隐私协议》</navigator>
