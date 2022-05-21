@@ -10,7 +10,8 @@
 		<view class="login-input">
 			<view class="flex justify-center">
 				<view class="phone">
-					<input class="phone-input" type="number" placeholder=" 请输入手机号码" />
+					<input class="phone-input" type="number" placeholder=" 请输入手机号码" 
+					v-model:value="phone" :focus="phoneFocus"/>
 				</view>
 			</view>
 			
@@ -44,27 +45,42 @@
 </template>
 
 <script>
+	import util from '@/utils/common.js';
 	export default{
 		data(){
 			return{
+				phone: '',
+				phoneFocus:false,
 				getVerifyValue:'获取验证码',
 				noClick:true,
 			}
 		},
 		methods:{
+			check(){
+				if(!util.checkMobile(this.phone)){
+					uni.showToast({title: '手机号格式错误',icon: 'error'});
+					this.phoneFocus=true;
+				}
+			},
 			getVerify(){
-				var num = 60;
-				var timer = setInterval(()=>{
-					this.noClick=false
-					this.getVerifyValue=num+"秒后重新获取";
-					num--;
-					// console.log(this.getVerifyValue)
-					if(num==-1){
-						this.getVerifyValue = '获取验证码'
-						this.noClick=true
-						clearInterval(timer)
-					}
-				},1000);	
+				if(util.checkMobile(this.phone)){
+					var num = 60;
+					var timer = setInterval(()=>{
+						this.noClick=false
+						this.getVerifyValue=num+"秒后重新获取";
+						num--;
+						// console.log(this.getVerifyValue)
+						if(num==-1){
+							this.getVerifyValue = '获取验证码'
+							this.noClick=true
+							clearInterval(timer)
+						}
+					},1000);
+				}
+				else{
+					uni.showToast({title: '手机号格式错误',icon: 'error'});
+					this.phoneFocus=true;
+				}
 			},
 			toPhoneLogin(){
 				uni.navigateBack({

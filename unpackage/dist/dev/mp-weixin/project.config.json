@@ -30,8 +30,7 @@
     "disableUseStrict": false,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
-    "useStaticServer": true,
-    "minifyWXML": true
+    "useStaticServer": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.24.1",

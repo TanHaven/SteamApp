@@ -15,7 +15,7 @@ import Vue from 'vue'
 // Vue.prototype.$http = $http
 // Vue.prototype.$get = $get
 // Vue.prototype.$post = $post
-import common from "utils/onlyOneClick.js"
+import common from "utils/common.js"
 Vue.prototype.$onlyOneClick = common.onlyOneClick;
 Vue.prototype.$axios = axios;
 

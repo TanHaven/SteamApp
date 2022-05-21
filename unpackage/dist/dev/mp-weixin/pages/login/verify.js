@@ -130,84 +130,101 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
-{
-  data: function data() {
-    return {
-      getVerifyValue: '获取验证码',
-      noClick: true };
-
-  },
-  methods: {
-    getVerify: function getVerify() {var _this = this;
-      var num = 60;
-      var timer = setInterval(function () {
-        _this.noClick = false;
-        _this.getVerifyValue = num + "秒后重新获取";
-        num--;
-        // console.log(this.getVerifyValue)
-        if (num == -1) {
-          _this.getVerifyValue = '获取验证码';
-          _this.noClick = true;
-          clearInterval(timer);
-        }
-      }, 1000);
-    },
-    toPhoneLogin: function toPhoneLogin() {
-      uni.navigateBack({});
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
 
 
-    },
-    toSetPassword: function toSetPassword() {
-      uni.navigateTo({
-        url: "setPassword" });
 
-    } } };exports.default = _default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _common = _interopRequireDefault(__webpack_require__(/*! @/utils/common.js */ 54));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default = { data: function data() {return { phone: '', phoneFocus: false, getVerifyValue: '获取验证码', noClick: true };}, methods: { check: function check() {if (!_common.default.checkMobile(this.phone)) {uni.showToast({ title: '手机号格式错误', icon: 'error' });this.phoneFocus = true;}}, getVerify: function getVerify() {var _this = this;if (_common.default.checkMobile(this.phone)) {var num = 60;var timer = setInterval(function () {_this.noClick = false;_this.getVerifyValue = num + "秒后重新获取";num--; // console.log(this.getVerifyValue)
+          if (num == -1) {_this.getVerifyValue = '获取验证码';_this.noClick = true;clearInterval(timer);}}, 1000);} else {uni.showToast({ title: '手机号格式错误', icon: 'error' });this.phoneFocus = true;}}, toPhoneLogin: function toPhoneLogin() {uni.navigateBack({});}, toSetPassword: function toSetPassword() {uni.navigateTo({ url: "setPassword" });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
