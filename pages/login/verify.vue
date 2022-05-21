@@ -16,18 +16,15 @@
 			
 			<view class="flex justify-center">
 				<view class="verify flex justify-around">
-					<input class="verify-input" password="true" placeholder=" 请输入验证码"></input>
+					<input class="verify-input" type="number" placeholder=" 请输入验证码"></input>
 					<input class="get" disabled="true" v-bind:value="getVerifyValue" @click="$onlyOneClick(getVerify)"></input>
 				</view>
-				<!-- <view class="get-verify">
-					<input class="get" password="true" v-bind:value="gerVerifyValue"></input>
-				</view> -->
 			</view>
 		</view>
 		<!-- 登录按钮 -->
 		<view class="btn">
 			<view>
-				<button class="login-btn">登录</button>
+				<button class="login-btn" @click="toSetPassword()">登录</button>
 			</view>
 		</view>
 		<view class="flex justify-start" style="margin-top: 20rpx;">
@@ -56,7 +53,7 @@
 		},
 		methods:{
 			getVerify(){
-				var num = 10;
+				var num = 60;
 				var timer = setInterval(()=>{
 					this.noClick=false
 					this.getVerifyValue=num+"秒后重新获取";
@@ -72,6 +69,11 @@
 			toPhoneLogin(){
 				uni.navigateBack({
 					
+				})
+			},
+			toSetPassword(){
+				uni.navigateTo({
+					url:"setPassword"
 				})
 			}
 		}

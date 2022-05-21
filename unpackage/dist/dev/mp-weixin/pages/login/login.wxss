@@ -4628,6 +4628,7 @@ scroll-view.cu-steps .cu-item {
   background-color: #4678FA;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 .content .eyes {
   display: flex;
@@ -4665,13 +4666,6 @@ scroll-view.cu-steps .cu-item {
   color: white;
   text-align: center;
 }
-.content .login .other-icon {
-  background-color: white;
-  border-radius: 50rpx;
-  width: 60rpx;
-  height: 60rpx;
-  margin-top: 15rpx;
-}
 .content .wx-checkbox-input {
   border-radius: 50rpx;
   -webkit-transform: scale(0.6);
@@ -4679,19 +4673,5 @@ scroll-view.cu-steps .cu-item {
 }
 .content .box {
   margin-top: 20%;
-}
-.content .action {
-  width: 100%;
-}
-.content .action .cu-btn1 {
-  background-color: #4678FA;
-  border-radius: 50rpx;
-  width: 80%;
-  font-size: 28rpx;
-}
-.content .action .cu-btn2 {
-  width: 80%;
-  border-radius: 50rpx;
-  font-size: 28rpx;
 }
 

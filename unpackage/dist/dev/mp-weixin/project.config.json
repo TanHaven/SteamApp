@@ -30,23 +30,14 @@
     "disableUseStrict": false,
     "showES6CompileOption": false,
     "useCompilerPlugins": false,
-    "useStaticServer": true
+    "useStaticServer": true,
+    "minifyWXML": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.24.1",
   "appid": "wxd9d9ee3f8400d869",
   "projectname": "uni-NF-Front-End",
-  "condition": {
-    "miniprogram": {
-      "list": [
-        {
-          "name": "pages/login/login",
-          "pathName": "pages/login/login",
-          "query": ""
-        }
-      ]
-    }
-  },
+  "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

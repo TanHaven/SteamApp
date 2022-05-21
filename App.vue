@@ -19,4 +19,5 @@
 	@import "colorui/icon.css";
 	/*weixincss*/
 	@import "wxcomponents/vant/dist/common/index.wxss";
+	
 </style>

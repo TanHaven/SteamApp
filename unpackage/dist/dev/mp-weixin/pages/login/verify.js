@@ -175,9 +175,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -188,7 +185,7 @@ var _default =
   },
   methods: {
     getVerify: function getVerify() {var _this = this;
-      var num = 10;
+      var num = 60;
       var timer = setInterval(function () {
         _this.noClick = false;
         _this.getVerifyValue = num + "秒后重新获取";
@@ -204,6 +201,11 @@ var _default =
     toPhoneLogin: function toPhoneLogin() {
       uni.navigateBack({});
 
+
+    },
+    toSetPassword: function toSetPassword() {
+      uni.navigateTo({
+        url: "setPassword" });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

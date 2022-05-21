@@ -25,7 +25,7 @@
 		</view>
 		<view class="flex justify-center" style="margin-top: 20rpx;">
 			<input style="text-align: center;" disabled="true" value="验证码登录" @click="toVerifyLogin()"/>
-			<input style="text-align: center;" disabled="true" value="忘记密码" @click=""/>
+			<input style="text-align: center;" disabled="true" value="忘记密码" @click="toSetPassword()"/>
 		</view>
 		
 		<view class="box flex justify-center">
@@ -51,6 +51,11 @@
 			toVerifyLogin(){
 				uni.navigateTo({
 					url:"verify"
+				})
+			},
+			toSetPassword(){
+				uni.navigateTo({
+					url:"emailReset"
 				})
 			}
 		}

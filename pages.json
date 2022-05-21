@@ -1,13 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		// {
-		// 	"path": "pages/login/verify",
-		// 	"style": {
-		// 		"navigationBarTitleText": "验证码登录",
-		// 		"enablePullDownRefresh": true,
-		// 		"backgroundTextStyle": "dark"
-		// 	}
-		// },
+
 		{
 			"path": "pages/index/index"
 		},
@@ -18,7 +11,7 @@
 			"path": "pages/login/phonelogin",
 			"style": {
 				"navigationBarTitleText": "密码登录",
-				"enablePullDownRefresh": true,
+				"enablePullDownRefresh": false,
 				"backgroundTextStyle": "dark"
 			}
 		},
@@ -26,7 +19,7 @@
 			"path": "pages/login/verify",
 			"style": {
 				"navigationBarTitleText": "验证码登录",
-				"enablePullDownRefresh": true,
+				"enablePullDownRefresh": false,
 				"backgroundTextStyle": "dark"
 			}
 		},
@@ -77,26 +70,43 @@
 				"enablePullDownRefresh": true,
 				"backgroundTextStyle": "dark"
 			}
-		}
-		// {
-		// 	"path": "pages/login/login"
-		// },
-		// {
-		// 	"path": "pages/index/index",
-		// 	"style": {
-		// 		"navigationBarTitleText": "uni-app"
-		// 	}
-		// }
-	],
+		},
+	    {
+            "path" : "pages/login/setPassword",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置密码",
+                "enablePullDownRefresh": true
+            }
+        }
+        ,{
+            "path" : "pages/login/emailReset",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/SmsReset",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "少年代码",
 		"navigationBarBackgroundColor": "#4678FA",
-		"backgroundColor": "#F4F3F0",
-		"usingComponents": {
-			"van-button": "/wxcomponents/vant/dist/button/index",
-			"van-dialog": "/wxcomponents/vant/dist/dialog/index"
-		}
+		"backgroundColor": "#F4F3F0"
+		// "usingComponents": {
+		// 	"van-button": "/wxcomponents/vant/dist/button/index",
+		// 	"van-dialog": "/wxcomponents/vant/dist/dialog/index"
+		// }
 	},
 	"tabBar": {
 		"color": "#8A8A8A",

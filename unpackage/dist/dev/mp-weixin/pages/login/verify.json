@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "验证码登录",
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
   "backgroundTextStyle": "dark",
   "usingComponents": {}
 }
