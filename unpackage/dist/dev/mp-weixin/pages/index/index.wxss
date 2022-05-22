@@ -4643,6 +4643,8 @@ scroll-view.cu-steps .cu-item {
 .content .action .cu-btn2 {
   width: 80%;
   border-radius: 50rpx;
+  border-style: solid;
+  border-width: 3rpx;
   font-size: 28rpx;
 }
 

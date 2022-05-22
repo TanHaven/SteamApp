@@ -14,9 +14,9 @@
 						内容等服务，我们需要收集您的观看历史、设备信息、操作日志
 						等个人信息。
 						您可阅读
-						<navigator style="color: red; display: inline;">《用户协议》</navigator>
+						<navigator style="color: blue; display: inline;">《用户协议》</navigator>
 						和
-						<navigator style="color: red;display: inline;">《隐私声明》</navigator>
+						<navigator style="color: blue;display: inline;">《隐私声明》</navigator>
 						如果您同意，请点击“同意”开始接受我们的服务。
 					</label>
 				</view>
@@ -86,6 +86,8 @@
 			.cu-btn2{
 				width: 80%;
 				border-radius: 50rpx;
+				border-style: solid;
+				border-width: 3rpx;
 				font-size: 28rpx;
 			}
 		}

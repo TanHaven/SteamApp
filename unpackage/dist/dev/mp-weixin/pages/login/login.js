@@ -178,7 +178,8 @@ var _default =
 {
   data: function data() {
     return {
-      modalName: null };
+      modalName: null,
+      isRead: true };
 
   },
   onLoad: function onLoad() {
@@ -191,6 +192,9 @@ var _default =
     hideModal: function hideModal() {
       this.modalName = null;
     },
+    read: function read() {
+      this.isRead = false;
+    },
     to: function to() {
       uni.navigateTo({
         url: "" });
@@ -198,14 +202,29 @@ var _default =
       this.$store.dispatch("login/login", this);
     },
     toWxLogin: function toWxLogin() {
-      uni.navigateTo({
-        url: "wxlogin" });
+      if (this.isRead) {
+        uni.navigateTo({
+          url: "wxlogin" });
+
+      } else
+      {
+        uni.showToast({
+          title: "请先阅读并同意《用户协议》和《用户信息协议》", icon: "none" });
+
+      }
 
     },
     toPhoneLogin: function toPhoneLogin() {
-      uni.navigateTo({
-        url: "phonelogin" });
+      if (this.isRead) {
+        uni.navigateTo({
+          url: "phonelogin" });
 
+      } else
+      {
+        uni.showToast({
+          title: "请先阅读并同意《用户协议》和《用户信息协议》", icon: "none" });
+
+      }
       // this.$axios({
       // 	method:'GET',
       // 	url:'`/query?${city}`',
@@ -221,9 +240,16 @@ var _default =
       // })
     },
     toQQLogin: function toQQLogin() {
-      uni.navigateTo({
-        url: "qqLogin" });
+      if (this.isRead) {
+        uni.navigateTo({
+          url: "qqLogin" });
 
+      } else
+      {
+        uni.showToast({
+          title: "请先阅读并同意《用户协议》和《用户信息协议》", icon: "none" });
+
+      }
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

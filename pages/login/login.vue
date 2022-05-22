@@ -33,7 +33,7 @@
 		<view class="box flex justify-center">
 			<label style="color: white;">
 				<!-- <view class="wx-checkbox-input">nihao</view> -->
-				<checkbox checked="true" color="white" />登录代表已阅读并同意
+				<checkbox :checked="isRead" color="white" @click="read()"/>登录代表已阅读并同意
 					<navigator style="color: blue; display: inline;" @click="">《用户协议》</navigator>
 					和
 					<navigator style="color: blue; display: inline;" @click="">《隐私协议》</navigator>
@@ -46,7 +46,8 @@
 	export default {
 		data() {
 			return {
-				modalName: null
+				modalName: null,
+				isRead:true
 			}
 		},
 		onLoad() {
@@ -59,6 +60,9 @@
 			hideModal() {
 				this.modalName = null
 			},
+			read(){
+				this.isRead =false
+			},
 			to(){
 				uni.navigateTo({
 					url:""
@@ -66,14 +70,29 @@
 				this.$store.dispatch("login/login",this)
 			},
 			toWxLogin(){
-				uni.navigateTo({
-					url:"wxlogin"
-				})
+				if(this.isRead){
+					uni.navigateTo({
+						url:"wxlogin"
+					})
+				}
+				else{
+					uni.showToast({
+						title:"请先阅读并同意《用户协议》和《用户信息协议》",icon:"none"
+					})
+				}
+				
 			},
 			toPhoneLogin(){
-				uni.navigateTo({
-					url:"phonelogin"
-				})
+				if(this.isRead){
+					uni.navigateTo({
+						url:"phonelogin"
+					})
+				}
+				else{
+					uni.showToast({
+						title:"请先阅读并同意《用户协议》和《用户信息协议》",icon:"none"
+					})
+				}
 				// this.$axios({
 				// 	method:'GET',
 				// 	url:'`/query?${city}`',
@@ -89,9 +108,16 @@
 				// })
 			},
 			toQQLogin(){
-				uni.navigateTo({
-					url:"qqLogin"
-				})
+				if(this.isRead){
+					uni.navigateTo({
+						url:"qqLogin"
+					})
+				}
+				else{
+					uni.showToast({
+						title:"请先阅读并同意《用户协议》和《用户信息协议》",icon:"none"
+					})
+				}
 			}
 		}
 	}

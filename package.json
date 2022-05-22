@@ -1,0 +1,23 @@
+{
+  "name": "teencode-vue",
+  "version": "1.0.0",
+  "description": "《基于STEAM教育理念的少儿编程教育平台》前端项目仓库",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Order-Of-The-NanFangShaoNian/Teencode-Vue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Order-Of-The-NanFangShaoNian/Teencode-Vue/issues"
+  },
+  "homepage": "https://github.com/The-Order-Of-The-NanFangShaoNian/Teencode-Vue#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
