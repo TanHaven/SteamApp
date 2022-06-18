@@ -1,6 +1,12 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
 		{
 			"path": "pages/index/index"
 		},
@@ -55,14 +61,14 @@
 				"backgroundTextStyle": "dark"
 			}
 		},
-		{
-			"path": "pages/message/message",
-			"style": {
-				"navigationBarTitleText": "私信",
-				"enablePullDownRefresh": true,
-				"backgroundTextStyle": "dark"
-			}
-		},
+		// {
+		// 	"path": "pages/message/message",
+		// 	"style": {
+		// 		"navigationBarTitleText": "私信",
+		// 		"enablePullDownRefresh": true,
+		// 		"backgroundTextStyle": "dark"
+		// 	}
+		// },
 		{
 			"path": "pages/personage/personage",
 			"style": {
@@ -90,6 +96,24 @@
         }
         ,{
             "path" : "pages/login/SmsReset",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/friends",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/message/search",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",

@@ -1,1 +1,1 @@
-<view><text selectable="true">这是私信页面</text></view>
+<view class="message"><view class="top flex"><view class="left flex justify-start"><input class="text1" disabled="true" value="好友" data-event-opts="{{[['tap',[['',['$event']]]]]}}" bindtap="__e"/><input class="text2" disabled="true" value="搜索" data-event-opts="{{[['tap',[['',['$event']]]]]}}" bindtap="__e"/></view><view class="right text-xl text-blue"><input data-event-opts="{{[['tap',[['',['$event']]]]]}}" class="more cuIcon-roundaddfill" bindtap="__e"/></view></view><view class="content"><slot></slot></view></view>
